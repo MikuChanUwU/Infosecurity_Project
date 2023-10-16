@@ -1,0 +1,55 @@
+/*
+    Global stylings
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", "Segoe UI", sans-serif;
+  color: var(--black);
+  scrollbar-color: var(--scrollbar-color) #00000000;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Scroll bar styles */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+  border-radius: 0.6rem;
+}
+
+/* Image wrappers for unstreched constant ratio image displays */
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrapper.img-1-1 {
+  padding-top: 100%;
+}
+
+.img-wrapper.img-16-9 {
+  padding-top: 56.25%;
+}

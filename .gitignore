@@ -1,0 +1,22 @@
+# Directories
+__pycache__/
+.venv/
+.vscode/
+.idea/
+
+# Logs
+server/logs/
+
+# Media
+media/
+
+# Development
+mkcert.exe
+cert.pem
+key.pem
+
+# Stuff
+key.key
+
+# Misc
+token.json
